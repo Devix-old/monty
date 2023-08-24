@@ -29,6 +29,11 @@ int execute(stack_t **top, char *line, unsigned int Line_number, FILE *file)
 		}
 		i++;
 	}
+	if (instruction[i].opcode == NULL)
+	{
+		fprintf(stderr, "L%d: unknown instruction %s\n", Line_number, token);
+		exit(EXIT_FAILURE);
+	}
 	return (0);
 	(void)file;
 }
