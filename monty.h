@@ -55,4 +55,10 @@ bool is_integer(char *str);
 bool is_whitespace(char c);
 int count_args(char *line);
 int execute(stack_t **top, char *line, unsigned int Line_number, FILE *file);
+void pint(stack_t **top, unsigned int Line_number);
+void pop(stack_t **top, unsigned int Line_number);
+void swap(stack_t **top, unsigned int Line_number);
+int count_nodes(stack_t *top);
+void add(stack_t **top, unsigned int Line_number);
+void nop(stack_t **top, unsigned int Line_number);
 #endif

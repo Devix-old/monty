@@ -1,5 +1,8 @@
-	push -1
-push 2
-push 3      
-phello                          
+nop
+push 5
+push 4
+push 3
+nop
+pall
+pop
 pall
