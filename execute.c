@@ -19,6 +19,7 @@ int execute(stack_t **top, char *line, unsigned int Line_number, FILE *file)
 	    {"sub", sub},
 	    {"div", _div},
 	    {"mul", mul},
+	    {"mod", mod},
 	    {NULL, NULL}};
 	char *token, *arg;
 	int i = 0;

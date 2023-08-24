@@ -4,7 +4,7 @@
  * @top: Pointer to the top of the stack.
  * @Line_number: Line number in the input file.
  */
-void _div(stack_t **top, unsigned int Line_number)
+void mod(stack_t **top, unsigned int Line_number)
 {
 	stack_t *temp;
 	int MOD;
