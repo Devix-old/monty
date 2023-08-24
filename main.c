@@ -32,6 +32,8 @@ int main(int argc, char *argv[])
 	{
 		line = NULL;
 		g = getline(&line, &n, file);
+		if (line[0] == '#')
+			continue;
 		delete_spaces(line);
 		monty.line = line;
 		line_number++;
