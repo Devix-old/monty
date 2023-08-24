@@ -12,7 +12,8 @@ bool is_integer(char *str)
 
 	if (str == NULL || *str == '\0')
 		return (false);
-
+	if (str[i] == '-' || str[i] == '+')
+		i++;
 	while (str[i] != '\0')
 	{
 		if (!isdigit(str[i]))
