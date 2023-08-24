@@ -8,7 +8,7 @@ void pint(stack_t **top, unsigned int Line_number)
 {
 	if (*top == NULL)
 	{
-		fprintf(stderr, "L%d: can't pint, stack empty", Line_number);
+		fprintf(stderr, "L%d: can't pint, stack empty\n", Line_number);
 		free_stack(*top);
 		free(monty.line);
 		fclose(monty.file);

@@ -12,7 +12,7 @@ void pop(stack_t **top, unsigned int Line_number)
 	if (*top == NULL)
 	{
 
-		fprintf(stderr, "L%d: can't pop an empty stack", Line_number);
+		fprintf(stderr, "L%d: can't pop an empty stack\n", Line_number);
 		free_stack(*top);
 		free(monty.line);
 		fclose(monty.file);
