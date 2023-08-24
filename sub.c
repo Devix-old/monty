@@ -11,7 +11,7 @@ void sub(stack_t **top, unsigned int Line_number)
 
 	if (count_nodes(*top) < 2)
 	{
-		fprintf(stderr, "L%d: can't add, stack too short\n", Line_number);
+		fprintf(stderr, "L%d: can't sub, stack too short\n", Line_number);
 		free_stack(*top);
 		free(monty.line);
 		fclose(monty.file);
