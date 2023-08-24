@@ -1,13 +1,13 @@
 #include "monty.h"
 /**
- * add - Add the two top elements.
+ * sub - sub the two top elements.
  * @top: Pointer to the top of the stack.
  * @Line_number: Line number in the input file.
  */
-void add(stack_t **top, unsigned int Line_number)
+void sub(stack_t **top, unsigned int Line_number)
 {
 	stack_t *temp;
-	int sum;
+	int SUB;
 
 	if (count_nodes(*top) < 2)
 	{
@@ -17,10 +17,11 @@ void add(stack_t **top, unsigned int Line_number)
 		fclose(monty.file);
 		exit(EXIT_FAILURE);
 	}
+
 	temp = *top;
 
-	sum = temp->n + temp->next->n;
-	temp->next->n = sum;
+	SUB = temp->next->n - temp->n;
+	temp->next->n = SUB;
 	*top = temp->next;
 	free(temp);
 }

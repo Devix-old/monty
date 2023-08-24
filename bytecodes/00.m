@@ -1,4 +1,6 @@
-push 100
-push 200
-add
+push 1
+push 2
+push 10
+push 3
+sub
 pall
