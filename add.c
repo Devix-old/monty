@@ -7,8 +7,9 @@
 void add(stack_t **top, unsigned int Line_number)
 {
 	stack_t *temp = (*top)->next;
+	int sum;
 
-	if (count_nodes(*top) < 2 || *top == NULL)
+	if (count_nodes(*top) < 2)
 	{
 		fprintf(stderr, "L%d: can't add, stack too short\n", Line_number);
 		free_stack(*top);
@@ -16,8 +17,8 @@ void add(stack_t **top, unsigned int Line_number)
 		fclose(monty.file);
 		exit(EXIT_FAILURE);
 	}
-
-	temp->n += (*top)->n;
+	sum = temp->n + (*top)->n;
+	temp->n = sum;
 
 	pop(top, Line_number);
 }
