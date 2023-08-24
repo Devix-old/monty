@@ -19,7 +19,7 @@ void _div(stack_t **top, unsigned int Line_number)
 	}
 	if ((*top)->n == 0)
 	{
-		fprintf(stderr, "L%d: division by zero", Line_number);
+		fprintf(stderr, "L%d: division by zero\n", Line_number);
 		free_stack(*top);
 		free(monty.line);
 		fclose(monty.file);
