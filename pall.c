@@ -2,7 +2,7 @@
 /**
  * pall - Prints all the elements of a stack.
  * @top: Pointer to the top of the stack.
- * @Line_number: Number of the line
+ * @Line_number: Number of lines
  */
 void pall(stack_t **top, unsigned int Line_number)
 {

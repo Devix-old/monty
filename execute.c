@@ -32,8 +32,11 @@ int execute(stack_t **top, char *line, unsigned int Line_number, FILE *file)
 	if (instruction[i].opcode == NULL)
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n", Line_number, token);
+		free(monty.line);
+		free_stack(*top);
+		fclose(monty.file);
 		exit(EXIT_FAILURE);
 	}
-	return (0);
 	(void)file;
+	return (0);
 }
